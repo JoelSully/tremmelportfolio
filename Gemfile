@@ -5,12 +5,11 @@ ruby "3.0.0"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 gem "sprockets-rails"
 gem "pg"
-catgem "puma", "~> 5.0"
+gem "puma", "~> 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
-gem "heroku"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -54,4 +53,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+end
+
+group :production do
+  gem 'pg'
+  #gem 'rails_12factor', '0.0.2'
 end
