@@ -4131,3 +4131,105 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.0ms | Allocations: 52185)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4277251290976164060)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4277251290976164060)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-08-04 21:56:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 38788)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 44102)
+
+
+  
+ActionView::Template::Error (The asset "images/IMG_5199.jpeg" is not present in the asset pipeline.
+):
+    13:   </head>
+    14:   <body>
+    15:   <div class="background-pic">
+    16:     <%= image_tag("images/IMG_5199.jpeg", class: "img-fluid", id: "navbar-logo") %>
+    17:   </div>
+    18:     <div>
+    19:       <div>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/" for ::1 at 2022-08-04 21:56:37 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4460)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5463)
+
+
+  
+ActionView::Template::Error (The asset "app/assets/images/IMG_5199.jpeg" is not present in the asset pipeline.
+):
+    13:   </head>
+    14:   <body>
+    15:   <div class="background-pic">
+    16:     <%= image_tag("app/assets/images/IMG_5199.jpeg", class: "img-fluid", id: "navbar-logo") %>
+    17:   </div>
+    18:     <div>
+    19:       <div>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/" for ::1 at 2022-08-04 21:56:46 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 153)
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 432)
+  Rendered home/_footer.html.erb (Duration: 0.9ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4182)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 5251)
+
+
+Started GET "/" for ::1 at 2022-08-04 21:57:00 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 5785)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 6790)
+
+
+  
+ActionView::Template::Error (Missing partial home/__header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/joel/Desktop/RoR/at_portfolio/app/views"
+  * "/Users/joel/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.3.1/app/views"
+  * "/Users/joel/.rvm/gems/ruby-3.0.0/gems/actionmailbox-7.0.3.1/app/views"
+
+Did you mean?  home/header
+               home/footer
+               action_text/attachables/remote_image
+               action_text/attachables/missing_attachable
+               action_text/contents/content
+               layouts/action_text/contents/content):
+    17:   </div>
+    18:     <div>
+    19:       <div>
+    20:         <%= render 'home/_header' %>
+    21:         </br>
+    22:       </div>
+    23:         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+app/views/layouts/application.html.erb:20
+Started GET "/" for ::1 at 2022-08-04 21:57:29 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 153)
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 379)
+  Rendered home/_footer.html.erb (Duration: 0.5ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4183)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 5216)
+
+
