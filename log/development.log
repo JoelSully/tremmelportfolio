@@ -4119,3 +4119,15 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 17ms (Views: 15.3ms | Allocations: 3477)
 
 
+Started GET "/" for ::1 at 2022-08-04 17:52:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 404)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 436)
+  Rendered home/_footer.html.erb (Duration: 0.4ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 46819)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.0ms | Allocations: 52185)
+
+
