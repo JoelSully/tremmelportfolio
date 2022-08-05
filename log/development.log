@@ -4233,3 +4233,171 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 5216)
 
 
+Started GET "/" for ::1 at 2022-08-04 22:00:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 38973)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 44287)
+
+
+  
+ActionView::Template::Error (The asset "assets/images/IMG_5199.jpeg" is not present in the asset pipeline.
+):
+    13:   </head>
+    14:   <body>
+    15:   <div class="background-pic">
+    16:     <%= image_tag("assets/images/IMG_5199.jpeg", class: "img-fluid", id: "navbar-logo") %>
+    17:   </div>
+    18:     <div>
+    19:       <div>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/" for ::1 at 2022-08-04 22:02:12 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 153)
+  Rendered home/_backgroundimg.html.erb (Duration: 0.6ms | Allocations: 112)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 430)
+  Rendered home/_footer.html.erb (Duration: 0.8ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3973)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 5041)
+
+
+Started GET "/images/IMG_5199" for ::1 at 2022-08-04 22:02:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/IMG_5199"):
+  
+Started GET "/" for ::1 at 2022-08-04 22:02:24 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 153)
+  Rendered home/_backgroundimg.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 377)
+  Rendered home/_footer.html.erb (Duration: 0.8ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3900)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 4938)
+
+
+Started GET "/" for ::1 at 2022-08-04 22:02:52 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 153)
+  Rendered home/_backgroundimg.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 377)
+  Rendered home/_footer.html.erb (Duration: 0.6ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3906)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 4944)
+
+
+Started GET "/images/IMG_5199.jpeg" for ::1 at 2022-08-04 22:02:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/IMG_5199.jpeg"):
+  
+Started GET "/" for ::1 at 2022-08-04 22:02:53 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered home/_backgroundimg.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 136)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2762)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3082)
+
+
+Started GET "/images/IMG_5199.jpeg" for ::1 at 2022-08-04 22:02:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/IMG_5199.jpeg"):
+  
+Started GET "/" for ::1 at 2022-08-04 22:03:12 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 153)
+  Rendered home/_backgroundimg.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 377)
+  Rendered home/_footer.html.erb (Duration: 0.5ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3901)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 4933)
+
+
+Started GET "/images/IMG_5199.jpeg" for ::1 at 2022-08-04 22:03:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/IMG_5199.jpeg"):
+  
+Started GET "/" for ::1 at 2022-08-04 22:03:13 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered home/_backgroundimg.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 136)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2753)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 3076)
+
+
+Started GET "/images/IMG_5199.jpeg" for ::1 at 2022-08-04 22:03:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/IMG_5199.jpeg"):
+  
+Started GET "/" for ::1 at 2022-08-04 22:03:25 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 153)
+  Rendered home/_backgroundimg.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 377)
+  Rendered home/_footer.html.erb (Duration: 0.5ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3899)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 4931)
+
+
+Started GET "/images/IMG_5199.jpeg" for ::1 at 2022-08-04 22:03:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/IMG_5199.jpeg"):
+  
+Started GET "/" for ::1 at 2022-08-04 22:03:54 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 153)
+  Rendered home/_backgroundimg.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 377)
+  Rendered home/_footer.html.erb (Duration: 0.9ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3910)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 4943)
+
+
+Started GET "/IMG_5199.jpeg" for ::1 at 2022-08-04 22:03:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/IMG_5199.jpeg"):
+  
+Started GET "/" for ::1 at 2022-08-04 22:04:12 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 153)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 379)
+  Rendered home/_footer.html.erb (Duration: 1.0ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4205)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 5238)
+
+
+Started GET "/" for ::1 at 2022-08-04 22:04:28 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 153)
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 379)
+  Rendered home/_footer.html.erb (Duration: 0.6ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4151)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 5184)
+
+
